@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon | 地平线 - Bilingual Creative Studio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+</head>
+<body>
+    <!-- Language Toggle -->
+    <div class="lang-toggle">
+        <button id="lang-en" class="lang-btn active" data-lang="en">EN</button>
+        <span class="lang-separator">/</span>
+        <button id="lang-zh" class="lang-btn" data-lang="zh">中文</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">Horizon</span>
+                <span class="logo-sub">地平线</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link" data-key="nav.home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-key="nav.about">About</a></li>
+                <li><a href="#services" class="nav-link" data-key="nav.services">Services</a></li>
+                <li><a href="#portfolio" class="nav-link" data-key="nav.portfolio">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link" data-key="nav.contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-key="hero.title">Where Creativity Meets Innovation</h1>
+                <h2 class="hero-subtitle" data-key="hero.subtitle">创意与创新的交汇点</h2>
+                <p class="hero-desc" data-key="hero.desc">We craft digital experiences that blend aesthetic elegance with functional precision for global audiences.</p>
+                <p class="hero-desc-zh" data-key="hero.desc-zh">我们为全球受众打造融合美学优雅与功能精度的数字体验。</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary" data-key="hero.btn1">View Our Work</a>
+                    <a href="#contact" class="btn btn-outline" data-key="hero.btn2">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="image-grid">
+                    <div class="img-box img-1">
+                        <div class="img-placeholder" id="img1">
+                            <i class="fas fa-image"></i>
+                            <span>Creative Design</span>
+                        </div>
+                    </div>
+                    <div class="img-box img-2">
+                        <div class="img-placeholder" id="img2">
+                            <i class="fas fa-palette"></i>
+                            <span>Brand Identity</span>
+                        </div>
+                    </div>
+                    <div class="img-box img-3">
+                        <div class="img-placeholder" id="img3">
+                            <i class="fas fa-code"></i>
+                            <span>Web Development</span>
+                        </div>
+                    </div>
+                    <div class="img-box img-4">
+                        <div class="img-placeholder" id="img4">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Digital Strategy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-key="about.title">About Our Studio</h2>
+                <p class="section-subtitle" data-key="about.subtitle">关于我们</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-key="about.p1">Horizon is a bilingual creative studio founded in 2020, dedicated to bridging cultural gaps through design and technology. Our team of designers, developers, and strategists work across time zones to deliver projects that resonate with both Eastern and Western sensibilities.</p>
+                    <p data-key="about.p2">We believe that great design transcends language barriers, creating intuitive experiences that feel native to every user. Our process combines meticulous attention to detail with bold creative vision.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label" data-key="about.stat1">Projects Delivered</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15</span>
+                            <span class="stat-label" data-key="about.stat2">Countries Served</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label" data-key="about.stat3">Client Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="img-placeholder large" id="img5">
+                        <i class="fas fa-users"></i>
+                        <span>Our Team</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-key="services.title">Our Services</h2>
+                <p class="section-subtitle" data-key="services.subtitle">我们的服务</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="service-title" data-key="services.s1.title">Brand Design</h3>
+                    <p class="service-desc" data-key="services.s1.desc">Complete visual identity systems, logo design, and brand guidelines that communicate your core values across cultures.</p>
+                    <p class="service-desc-zh" data-key="services.s1.desc-zh">完整的视觉识别系统、标志设计和品牌指南，跨文化传达您的核心价值。</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="service-title" data-key="services.s2.title">Web Development</h3>
+                    <p class="service-desc" data-key="services.s2.desc">Responsive, performant websites and web applications with bilingual support and international SEO optimization.</p>
+                    <p class="service-desc-zh" data-key="services.s2.desc-zh">响应式、高性能网站和Web应用，支持双语和国际SEO优化。</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 class="service-title" data-key="services.s3.title">Digital Marketing</h3>
+                    <p class="service-desc" data-key="services.s3.desc">Cross‑cultural campaign strategy, social media management, and content creation tailored for global audiences.</p>
+                    <p class="service-desc-zh" data-key="services.s3.desc-zh">针对全球受众的跨文化 campaign 策略、社交媒体管理和内容创作。</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="service-title" data-key="services.s4.title">Motion & Video</h3>
+                    <p class="service-desc" data-key="services.s4.desc">Animated explainers, product demos, and promotional videos with multilingual voice‑over and subtitles.</p>
+                    <p class="service-desc-zh" data-key="services.s4.desc-zh">带有多种语言配音和字幕的动画解说、产品演示和宣传视频。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-key="portfolio.title">Selected Work</h2>
+                <p class="section-subtitle" data-key="portfolio.subtitle">精选作品</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-img" id="img6">
+                        <div class="img-placeholder">
+                            <i class="fas fa-globe-americas"></i>
+                            <span>Global E‑commerce Platform</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 data-key="portfolio.p1.title">Global E‑commerce Platform</h3>
+                        <p data-key="portfolio.p1.desc">Multilingual platform serving customers in 12 countries with localized payment and logistics.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img" id="img7">
+                        <div class="img-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Health & Wellness App</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 data-key="portfolio.p2.title">Health & Wellness App</h3>
+                        <p data-key="portfolio.p2.desc">Bilingual meditation and fitness application with culturally‑adapted content.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img" id="img8">
+                        <div class="img-placeholder">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>E‑learning Platform</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 data-key="portfolio.p3.title">E‑learning Platform</h3>
+                        <p data-key="portfolio.p3.desc">Online education portal with courses available in both English and Mandarin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-key="contact.title">Get in Touch</h2>
+                <p class="section-subtitle" data-key="contact.subtitle">联系我们</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3 data-key="contact.address.title">Our Office</h3>
+                            <p data-key="contact.address.text">123 Creative District, Shanghai · 200000</p>
+                            <p data-key="contact.address.text2">Innovation Hub, San Francisco · CA 94107</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3 data-key="contact.email.title">Email Us</h3>
+                            <p>hello@horizon.studio</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3 data-key="contact.phone.title">Call Us</h3>
+                            <p>+86 21 1234 5678 (Shanghai)</p>
+                            <p>+1 415 123 4567 (San Francisco)</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="subject">
+                            <option value="" disabled selected>Select a subject</option>
+                            <option value="design">Design Inquiry</option>
+                            <option value="development">Development Project</option>
+                            <option value="marketing">Marketing Collaboration</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Your message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-key="contact.submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="#" class="footer-logo">
+                        <span>Horizon</span>
+                        <span>地平线</span>
+                    </a>
+                    <p class="footer-desc" data-key="footer.desc">Bridging cultures through design and technology since 2020.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-key="footer.links.title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home" data-key="footer.links.home">Home</a></li>
+                        <li><a href="#about" data-key="footer.links.about">About</a></li>
+                        <li><a href="#services" data-key="footer.links.services">Services</a></li>
+                        <li><a href="#portfolio" data-key="footer.links.portfolio">Portfolio</a></li>
+                        <li><a href="#contact" data-key="footer.links.contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-key="footer.social.title">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-behance"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Horizon Creative Studio. <span data-key="footer.rights">All rights reserved.</span></p>
+                <p class="footer-lang-note" data-key="footer.note">This website is available in English and 中文.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/language.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
