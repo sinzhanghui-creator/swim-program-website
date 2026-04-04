@@ -1,0 +1,37 @@
+# Backup directories
+*_backup_*/
+photos_backup*/
+
+# Log files
+*.log
+server.log
+tunnel.log
+ngrok.log
+ssh_tunnel.log
+
+# PID files
+*.pid
+server.pid
+tunnel.pid
+ngrok.pid
+
+# Temporary files
+*.tmp
+*.temp
+
+# macOS
+.DS_Store
+._*
+
+# IDE
+.vscode/
+.idea/
+
+# Node modules (if any)
+node_modules/
+
+# Build artifacts
+dist/
+build/
+*.min.js
+*.min.css
