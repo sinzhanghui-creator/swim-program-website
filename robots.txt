@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sinzhanghui-creator.github.io/swim-program-website/sitemap.xml
