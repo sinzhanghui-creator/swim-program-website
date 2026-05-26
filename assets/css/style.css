@@ -811,7 +811,7 @@ button, input, textarea, select {
     }
     
     .image-grid {
-        aspect-ratio: 16/9;
+        aspect-ratio: 1/1;
     }
 }
 
@@ -1047,7 +1047,9 @@ button, input, textarea, select {
     }
     
     .image-grid {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-md);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: var(--spacing-sm);
+        aspect-ratio: 1/1;
     }
 }
