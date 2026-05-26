@@ -374,21 +374,34 @@ button, input, textarea, select {
     display: block;
 }
 
-/* Feature images */
+/* ===== Feature Images Unified ===== */
 .feature-image {
     width: 100%;
-    height: auto;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-xl);
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 
-.mission-image .feature-image,
-.whyus-image .feature-image,
-.execution-image .feature-image,
-.funds-image .feature-image {
-    max-height: 400px;
-    object-fit: cover;
+.mission-image,
+.execution-visual,
+.funds-visual,
+.sponsor-visual {
+    width: 100%;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
+    background: var(--color-gray-light);
+}
+
+/* Feature image hero-hover effect */
+.mission-image:hover,
+.execution-visual:hover,
+.funds-visual:hover,
+.sponsor-visual:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
 }
 
 .img-1 { background: linear-gradient(135deg, #c7d2fe, #a5b4fc); }
@@ -418,6 +431,23 @@ button, input, textarea, select {
 
 .img-placeholder.large i {
     font-size: 4rem;
+}
+
+/* ===== Content + Image Grid Layouts ===== */
+.mission-content,
+.execution-content,
+.funds-content,
+.sponsor-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+}
+
+.mission-text,
+.execution-text,
+.funds-points {
+    order: 1;
 }
 
 /* ===== About Section ===== */
@@ -759,13 +789,25 @@ button, input, textarea, select {
     
     .hero-container,
     .about-content,
-    .contact-content {
+    .contact-content,
+    .mission-content,
+    .execution-content,
+    .funds-content,
+    .sponsor-content {
         grid-template-columns: 1fr;
         gap: var(--spacing-2xl);
     }
     
     .hero-visual {
         order: -1;
+    }
+    
+    .mission-image,
+    .execution-visual,
+    .funds-visual,
+    .sponsor-visual {
+        order: -1;
+        max-height: 350px;
     }
     
     .image-grid {
