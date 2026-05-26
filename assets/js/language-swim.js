@@ -113,7 +113,11 @@ const LanguageManager = (() => {
             'footer.links.sponsor': 'Sponsor Value',
             'footer.links.contact': 'Take Action',
             'footer.rights': 'All rights reserved.',
-            'footer.note': 'This website is available in English and 中文.'
+            'footer.note': 'This website is available in English and 中文.',
+            
+            // Friends section
+            'friends.title': 'Friendship Links',
+            'friends.subtitle': '友情链接'
         },
         zh: {
             // Navigation
@@ -226,7 +230,11 @@ const LanguageManager = (() => {
             'footer.links.sponsor': '赞助价值',
             'footer.links.contact': '行动号召',
             'footer.rights': '保留所有权利。',
-            'footer.note': '本网站提供英文和中文版本。'
+            'footer.note': '本网站提供英文和中文版本。',
+            
+            // Friends section
+            'friends.title': '友情链接',
+            'friends.subtitle': 'Friendship Links'
         }
     };
     
